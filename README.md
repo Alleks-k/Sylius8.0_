@@ -99,3 +99,6 @@ Sylius is completely free and released under the [MIT License](https://github.co
 
 Sylius was originally created by [Paweł Jędrzejewski](http://pjedrzejewski.com).
 See the list of [contributors from our awesome community](https://github.com/Sylius/Sylius/contributors).
+
+
+docker compose -f docker-compose.dev.yml up -d
