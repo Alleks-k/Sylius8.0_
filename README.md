@@ -102,3 +102,5 @@ See the list of [contributors from our awesome community](https://github.com/Syl
 
 
 docker compose -f docker-compose.dev.yml up -d
+
+- sylius
