@@ -36,6 +36,21 @@ $ symfony serve
 $ open http://localhost:8000/
 ```
 
+
+```bash
+composer install
+yarn install
+yarn build
+export MYSQL_PASSWORD=SLyPJLaye7
+nano /etc/php/8.0/cli/php.ini
+date.timezone = Europe/Kiev
+docker compose -f docker-compose.dev.yml up -d
+php bin/console sylius:install
+symfony serve
+```
+bin/console sylius:fixtures:load -n
+
+
 For more detailed instruction please visit [installation chapter in our docs](https://docs.sylius.com/en/1.10/book/installation/installation.html).
 
 ### Docker
