@@ -100,7 +100,11 @@ Sylius is completely free and released under the [MIT License](https://github.co
 Sylius was originally created by [Paweł Jędrzejewski](http://pjedrzejewski.com).
 See the list of [contributors from our awesome community](https://github.com/Sylius/Sylius/contributors).
 
-
+```bash
 docker compose -f docker-compose.dev.yml up -d
+docker compose -f docker-compose.dev.yml exec php bin/console sylius:fixtures:load --no-interaction
+```
+docker-compose exec -T mysql mysql -u sylius -pSLyPJLaye7 -Bse "show databases;"
+docker compose -f docker-compose.dev.yml exec php sh
 
 - sylius
